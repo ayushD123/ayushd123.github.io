@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/udacity-logo-vector.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- ChatBot -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+</head>
+<body>
+	
+	
+<!-- ChatBot -->
+<div class="chat_icon">
+	<img src="images/iStock-872962368-chat-bots-removebg-preview (1).png" width="150">
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello This is Buzz How can I help you" name="category">
+        <option value="Looking For A Product">Looking For A Product ?</option>
+        <option value="Need Urgent Delivery">Need Urgent Delivery</option>
+      </select>
+
+
+
+      <input type="text" name="name" data-conv-question="Please Enter Your Name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your Phone Number" type="Phone" name="Phone" required placeholder="What's your Phone Number?">
+
+      <select data-conv-question="Our Sale Executives Will Reach You Soon">
+        <option value="Yes">OK</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+
+<header class="header">
+	<!-- <iframe src="https://subnautica.fandom.com/wiki/File:BaseWelcomeAboard.ogg?embedplayer=yes?" width="180" height="20" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<!-- <a href="#!" class="logo"><img src="images/local beauty.png" alt="logo" width="120"></a> -->
+			</div>
+			<div style="float:left;width:100%">
+			<div  class="col-md-auto">
+				<nav  class="main_nav">
+					<ul>
+						
+						<li><a href="#home" style="text-align:left;" >Home </a></li>
+						<li><a href="#about">About Us</a></li>
+						
+						<li><a href="#contact">Contact Us</a></li>
+						<li>
+						<div class="popup" id="popup-1">
+							<div class="content">
+							 <div class="close-btn" onclick="togglePopup()">
+							  ×</div>
+							  
+						 <h1>Sign in</h1> 
+						   <div class="input-field"><input placeholder="Email" class="validate"></div>
+						   <div class="input-field"><input placeholder="Password" class="validate"></div>
+							 <button class="second-button" id="12345">Sign in</button>
+							 <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+							   
+							  
+							</div>
+						   </div>
+						   <button onclick="togglePopup()" class="first-button">Sign In</button>
+						   </li>
+						   <li>
+							   <div class="container_SearchBar">
+							   <input type="text" id="bar" placeholder="search product" >
+							</div>
+						   </li>
+						   <li>
+							   <div class="search_icon_top"> 
+								   <img src="images/search-icon-rounded-squares-button-vector-4526829-removebg-preview.png" alt="">
+							 	</div>
+							   
+						   </li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		</div>		
+	</div>
+	
+</header>	
+
+
+<div class="banner d-flex align-items-center" style="background-image: url('images/coronavirus-4914026_1920.jpg');" id="home">
+	<ul class="socila_links">
+		<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>What You Are Lookin For?</h1>
+					<p>We Offers Great Range Of Covid Supplies </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: black; padding-top: 10px; padding-bottom: 10px;">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="width: 1500px; position: relative;left: 189px; ">
+        <div class="carousel-item active"  data-interval="10">
+            <img class="d-block w-100" src='images/banner2_1604516722.jfif' alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                
+            </div>
+        </div>
+        <div class="carousel-item" data-interval="100">
+            <img class="d-block w-100" src='images/defend99-self-sanitizing-resuable-mask.jpg' alt="Second slide">
+        </div>
+        <div class="carousel-item" data-interval="100">
+            <img class="d-block w-100"  src='images/paytm.jpeg' alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div class="about-section" id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5 text-justify">
+				<h2 class="bdr-btm">More About CovidScape.com</h2>
+				<p>CovidScape started from a one-room office in Bangalore. We started with a simple idea which was to help improve Indian healthcare by making it accessible and affordable. How did we go about doing this? We devised a website coupled with additional value-added services via which medical establishments can search for their required supplies, order them at the right prices and time, and receive them at their door-steps irrespective of their location.</p>
+				<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#drafts?compose=VpCqJZNXQkwnDFbnkFktdkLpcNjvCNvHtNRSqsxBHdbcjcLvgZqQKHSBKQjSrBCnGXnLHMq" target="_blank" class="btn1">Contact Us</a>	
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Top Brands</h3>
+					<ul>
+						<li><strong>Purell</strong> <br> Market leading brands which is expertise in skin and surface hygiene and continued innovation to grow the hygiene category</li>
+						<li><strong>K.S. Garner</strong> <br>  K.S. Garner is a small Phoenix-based brand that sells made-to-order products</li>
+						<li><strong>Collina Strada</strong> <br> Collina Strada is turning deadstock material from past collections into beautiful, maximalist masks</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Benefits</h3>
+					<ul>
+						<li><strong>Free Fast Delivery</strong> <br> We Offer Free Delivery On All Products With Super Fast Delivery</li>
+						<li><strong>Great Range Of Products</strong> <br>From A Simple Mask To Designer Mask We Deliver Everything </li>
+						<li><strong>Hassle Free Return</strong> <br>We Offer 7 Days Free And Unquestionable Return</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">A Message From Our Expert</h2>
+		<center>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/kUc2NVYE0v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</center>
+	
+	</div>
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">What We Offer</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port1.jpeg');">
+					<h3>Masks</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port2.jpeg');">
+					<h3>Sanitizers</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port3.jpeg');">
+					<h3>Oximeter</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port4.jpeg');">
+					<h3>Gloves</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port5.jpeg');">
+					<h3>Faceshield</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port6.jpeg');">
+					<h3>PPE Kits</h3>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">We Care Our Employees</h2>
+		<center>
+		<iframe margin:0 auto width="560" height="315" src="https://www.youtube.com/embed/ynTTFr3y4Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</center>
+	
+	</div>
+	
+
+</div>
+
+<div>
+	<span class="parteners">
+		<h2 class="text-center bdr-btm bdr-btm-center">Our Proud Partners</h2>
+		<div class="brands">
+			
+							
+			<div class="small-container">
+				
+				<div class="row">
+					
+				
+					<div class="cod-5">
+						
+						<img src="IMAGES/A.2.png" >
+						
+					</div>
+					
+				<div class="cod-5">
+				
+				<img src="IMAGES/A.3.png" style="padding: 5px;" >
+				
+				</div>
+			
+			
+			
+				<div class="cod-5">
+				
+				<img src="IMAGES/A.1.png"  style="padding: 5px;">
+				
+				</div>
+			
+		<!-- </center> -->
+		</div>
+		</div>
+		</span>
+</div>
+
+<br>
+
+<!--footer starts from here-->
+<footer class="footer">
+	<div class="container bottom_border">
+	<div class="row">
+	<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+	<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+	
+	<p><i class="fa fa-location-arrow"></i> RNSIT Bangalore </p>
+	<p><i class="fa fa-phone"></i>  9559621930  </p>
+	<p><i class="fa fa fa-envelope"></i> onlyfordevelopingpurpose@gmail.com  </p>
+	
+	
+	</div>
+	
+	
+	<div class=" col-sm-4 col-md  col-6 col">
+	<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+	<!--headin5_amrc-->
+	<ul class="footer_ul_amrc">
+	<li><a href="http://webenlance.com">Sell On Covidscape</a></li>
+	<li><a href="http://webenlance.com">Career</a></li>
+	<li><a href="http://webenlance.com">Medical Advice</a></li>
+	<li><a href="http://webenlance.com">Medical Equipments</a></li>
+	<li><a href="http://webenlance.com">Blogs</a></li>
+	<li><a href="http://webenlance.com">Awards</a></li>
+	</ul>
+	<!--footer_ul_amrc ends here-->
+	</div>
+	
+	
+
+	
+	
+	<div class=" col-sm-4 col-md  col-12 col">
+	<h5 class="headin5_amrc col_white_amrc pt2">Also Available On</h5>
+	<img src="images/app-store.png"  alt="">
+	<img src="images/play-store.png" alt="">
+	</div>
+	</div>
+	</div>
+	
+	
+	<div class="container">
+	<ul class="foote_bottom_ul_amrc">
+	<li><a href="#">Terms Of Use</a></li>
+	<li><a href="#">Privacy Policy</a></li>
+	<li><a href="#">FAQs</a></li>
+	<li><a href="#">Return Policy</a></li>
+	<li><a href="#">Disclaimer</a></li>
+	<li><a href="#">Cookies Policy</a></li>
+	</ul>
+	<!--foote_bottom_ul_amrc ends here-->
+	<p class="text-center">Copyright @2021 | Designed With Love by <a href="https://www.linkedin.com/in/ayush-dixit-302705203/" target="_blank">Ayush Dixit</a></p>
+	
+	
+	
+	</footer>
+<script>
+	document.onload=togglePopup();
+	function togglePopup() {
+	document.getElementById("popup-1")
+	 .classList.toggle("active");
+   }
+   </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
